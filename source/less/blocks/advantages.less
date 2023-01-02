@@ -1,0 +1,53 @@
+.advantages__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+}
+
+.advantages__item {
+  position: relative;
+  padding-left: 102px;
+}
+
+.advantages__title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.advantages__subtitle {
+  margin: 0;
+}
+
+.advantages__icon {
+  position: absolute;
+  top: 16px;
+  height: 52px;
+
+  &--truck {
+    left: 0;
+    width: 82px;
+    background-image: url("../img/advantage-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--bouquet {
+    left: 30px;
+    width: 52px;
+    background-image: url("../img/advantage-2.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--camera {
+    left: 22px;
+    width: 59px;
+    background-image: url("../img/advantage-3.svg");
+    background-repeat: no-repeat;
+  }
+}
