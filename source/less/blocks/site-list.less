@@ -3,6 +3,24 @@
   flex-wrap: wrap;
 }
 
+.site-list--footer {
+  justify-content: space-between;
+
+  .site-list__item {
+    &:not(:last-child) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+
+  .site-list__link {
+    color: #ffffff;
+  }
+}
+
 .site-list__item {
   &:not(:last-child) {
     margin-right: 102px;

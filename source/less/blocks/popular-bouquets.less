@@ -4,9 +4,59 @@
 }
 
 .popular-bouquets__caption {
+  margin-bottom: 39px;
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 48px;
   text-align: center;
+}
+
+.popular-bouquets__list {
+  margin-bottom: 15px;
+}
+
+.popular-bouquets__item {
+  display: none;
+
+  &--current {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 22px;
+  }
+}
+
+.popular-bouquets__info-wraper {
+  width: 387px;
+}
+
+.popular-bouquets__title {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+}
+
+.popular-bouquets__deskription {
+  margin-bottom: 24px;
+}
+
+.popular-bouquets__price {
+  margin-bottom: 64px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.popular-bouquets__slide-controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 130px;
+}
+
+.popular-bouquets__slide-control {
+  border: none;
+  background-color: transparent;
 }

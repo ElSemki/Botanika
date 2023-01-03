@@ -1,0 +1,55 @@
+.types-of-bouquets__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.types-of-bouquets__list {
+  display: grid;
+  grid-template-columns: repeat(3, 387px);
+  column-gap: 20px;
+}
+
+.types-of-bouquets__item {
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 387px auto;
+
+  &--wedding {
+    background-image: url("../img/select-1.jpg");
+  }
+
+  &--peonies {
+    background-image: url("../img/select-2.jpg");
+  }
+
+  &--in-assortment {
+    background-image: url("../img/select-3.jpg");
+  }
+}
+
+.types-of-bouquets__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 442px;
+  padding: 0 20px;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(174, 124, 120, 0.6);
+  border-radius: 10px;
+}
+
+.types-of-bouquets__title {
+  margin: 0;
+  margin-bottom: 6px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+}
+
+.types-of-bouquets__subtitle {
+  margin: 0;
+}

@@ -167,7 +167,7 @@
           <p class="intro__subtitle">
             Оригинальные свежие букеты с доставкой по всему городу
           </p>
-          <a class="link-button intro__see-catalog-link">
+          <a class="link-button intro__see-catalog-link" href="#">
             Смотреть каталог
           </a>
         </div>
@@ -204,7 +204,7 @@
       <div class="popular-bouquets__wrapper">
         <h2 class="popular-bouquets__caption">Популярные букеты</h2>
         <ul class="popular-bouquets__list">
-          <li class="popular-bouquets__item">
+          <li class="popular-bouquets__item popular-bouquets__item--current">
             <div class="popular-bouquets__info-wraper">
               <p class="popular-bouquets__title">Букет «Нежность»</p>
               <p class="popular-bouquets__deskription">Элегантный букет, который станет отличным подарком на день
@@ -242,14 +242,14 @@
           </li>
         </ul>
         <div class="popular-bouquets__slide-controls">
-          <button class="popular-bouquets__slide-control popular-bouquets__slide-control--left" type="button">
+          <button class="popular-bouquets__slide-control" type="button">
             <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM51 9H1V7H51V9Z"
                 fill="#AE7C78" />
             </svg>
           </button>
-          <button class="popular-bouquets__slide-control popular-bouquets__slide-control--right" type="button">
+          <button class="popular-bouquets__slide-control" type="button">
             <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
@@ -264,19 +264,19 @@
       <h2 class="visually-hidden">Букеты для любого случая</h2>
       <div class="types-of-bouquets__wrapper">
         <ul class="types-of-bouquets__list">
-          <li class="types-of-bouquets__item">
+          <li class="types-of-bouquets__item types-of-bouquets__item--wedding">
             <a class="types-of-bouquets__link" href="#">
               <h3 class="types-of-bouquets__title">Свадебные букеты</h3>
               <p class="types-of-bouquets__subtitle">Букеты для невест</p>
             </a>
           </li>
-          <li class="types-of-bouquets__item">
+          <li class="types-of-bouquets__item types-of-bouquets__item--peonies">
             <a class="types-of-bouquets__link" href="#">
               <h3 class="types-of-bouquets__title">Букеты с пионами</h3>
               <p class="types-of-bouquets__subtitle">Букеты с сезонными пионами</p>
             </a>
           </li>
-          <li class="types-of-bouquets__item">
+          <li class="types-of-bouquets__item types-of-bouquets__item--in-assortment">
             <a class="types-of-bouquets__link" href="#">
               <h3 class="types-of-bouquets__title">Выбрать букет</h3>
               <p class="types-of-bouquets__subtitle">Букеты в ассортименте</p>
@@ -289,10 +289,12 @@
     <section class="page-main__discounts discounts">
       <div class="discounts__wrapper">
         <div class="discounts__info-wrapper">
-          <h2 class="discounts__title">Скидка 10% на первый заказ</h2>
+          <h2 class="discounts__title">Скидка 10%<br>
+            на первый заказ</h2>
           <p class="discounts__subtitle">Если заказываете у нас букет впервые — при оформлении заказа введите промокод
             «Botanika2021» и получите скидку 10%.</p>
         </div>
+        <div class="discounts__image"></div>
       </div>
     </section>
 
@@ -303,20 +305,24 @@
           <li class="perfect-bouquet__item">
             <h3 class="perfect-bouquet__title">Заказ</h3>
             <p class="perfect-bouquet__subtitle">Выберите понравившийся букет из каталога и оформите заказ</p>
+            <div class="perfect-bouquet__icon perfect-bouquet__icon--order"></div>
           </li>
           <li class="perfect-bouquet__item">
             <h3 class="perfect-bouquet__title">Уточнение деталей</h3>
             <p class="perfect-bouquet__subtitle">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали
             </p>
+            <div class="perfect-bouquet__icon perfect-bouquet__icon--details"></div>
           </li>
           <li class="perfect-bouquet__item">
             <h3 class="perfect-bouquet__title">Оплата</h3>
             <p class="perfect-bouquet__subtitle">Оплатить заказ можно онлайн
               на сайте или при получении</p>
+            <div class="perfect-bouquet__icon perfect-bouquet__icon--payment"></div>
           </li>
           <li class="perfect-bouquet__item">
             <h3 class="perfect-bouquet__title">Доставка</h3>
             <p class="perfect-bouquet__subtitle">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+            <div class="perfect-bouquet__icon perfect-bouquet__icon--delivery"></div>
           </li>
         </ul>
       </div>
@@ -342,8 +348,8 @@
           </li>
           <li class="reviews__item">
             <blockquote class="reviews__review">
-              <p class="reviews__review-text">Выбор букетов на любой вкус
-                и цену. Бывают хорошие скидки,
+              <p class="reviews__review-text">Выбор букетов на любой вкус<br>
+                и цену. Бывают хорошие скидки,<br>
                 а флористы всегда помогут и точно соберут красивый букет!</p>
               <cite class="reviews__author">Ольга</cite>
             </blockquote>
@@ -353,21 +359,28 @@
     </section>
 
     <section class="page-main__contacts contacts">
+      <img class="contacts__map" src="img/map.jpg" width="1440" height="644"
+        alt="Карта города Санкт-Петербург, где видно местонахождение магазина">
       <div class="contacts__wrapper">
         <h2 class="contacts__caption">Мы ждем вас</h2>
         <dl class="contacts__list">
-          <dt class="contacts__title">Приходите к нам:</dt>
-          <dd class="contacts__subtitle">Санкт-Петербург,<br>
-            ул. Большая Конюшенная, 19</dd>
-
-          <dt class="contacts__title">Режим работы:</dt>
-          <dd class="contacts__subtitle">Пн-Вск, с 9-00 до 20-00</dd>
-
-          <dt class="contacts__title">Позвоните нам:</dt>
-          <dd class="contacts__subtitle">+ 7 (812) 983-47-19</dd>
-
-          <dt class="contacts__title">Напишите нам:</dt>
-          <dd class="contacts__subtitle">info@botanika.ru</dd>
+          <div class="contacts__item">
+            <dt class="contacts__title">Приходите к нам:</dt>
+            <dd class="contacts__subtitle">Санкт-Петербург,<br>
+              ул. Большая Конюшенная, 19</dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__title">Режим работы:</dt>
+            <dd class="contacts__subtitle">Пн-Вск, с 9-00 до 20-00</dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__title">Позвоните нам:</dt>
+            <dd class="contacts__subtitle">+ 7 (812) 983-47-19</dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__title">Напишите нам:</dt>
+            <dd class="contacts__subtitle">info@botanika.ru</dd>
+          </div>
         </dl>
       </div>
     </section>
@@ -479,7 +492,7 @@
           </defs>
         </svg>
       </div>
-      <ul class="page-footer__list site-list">
+      <ul class="page-footer__list site-list site-list--footer">
         <li class="site-list__item">
           <a class="site-list__link" href="#">
             Каталог
@@ -503,11 +516,6 @@
         <li class="site-list__item">
           <a class="site-list__link" href="#">
             Контакты
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">
-            Корзина
           </a>
         </li>
       </ul>

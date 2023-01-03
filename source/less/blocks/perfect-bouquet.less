@@ -1,0 +1,63 @@
+.perfect-bouquet__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.perfect-bouquet__caption {
+  margin-bottom: 28px;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+.perfect-bouquet__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+.perfect-bouquet__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.perfect-bouquet__title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.perfect-bouquet__subtitle {
+  margin: 0;
+}
+
+.perfect-bouquet__icon {
+  width: 83px;
+  height: 68px;
+  order: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--order {
+    background-image: url("../img/step-1.svg");
+  }
+
+  &--details {
+    background-image: url("../img/step-2.svg");
+  }
+
+  &--payment {
+    background-image: url("../img/step-3.svg");
+  }
+
+  &--delivery {
+    background-image: url("../img/step-4.svg");
+  }
+}
